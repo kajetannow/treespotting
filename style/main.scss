@@ -1,0 +1,156 @@
+$main: #ADE03A;
+$sec: #EB771F;
+$wh: #F7FAF2;
+$bl: #212120;
+$font: "League Spartan", sans-serif;
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color: $bl;
+    background-color: $wh;
+    font-family: $font;
+}
+a{
+    color: inherit;
+}
+header{
+    margin: 1vh 0;
+    a{
+        text-decoration: none;
+    }
+}
+.app-title{
+    text-align: center;
+}
+h2, h3, h4{
+    margin-bottom: 1vh;
+}
+
+.btn-select-mode{
+    background-color: $sec;
+    color: $wh;
+    padding: 3vh 4vw;
+    margin: 2vh 0;
+    border-radius: 2vh;
+    align-self: center;
+    font-size: 1.7em;
+}
+
+.container-select-mode{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+    justify-content: center;
+}
+section{
+    position: relative;
+    height: 90vh;
+}
+
+.container-tree-content{
+   text-align: right;
+   position: relative;
+   margin-top: -20vh;
+   padding: 10vh 10vw 6vh;
+   color: $bl;
+   z-index: 10;
+   background: $wh;
+   background: linear-gradient(180deg, rgba($wh,0) 0%, rgba($wh,1) 40%, rgba($wh,1) 100%);
+   h1{
+       text-align: center;
+   }
+   h2{
+       text-align: left;
+   }
+}
+
+.container-control-btn{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: $wh;
+    img{
+        width: 10vw;
+        height: 10vw;
+    }
+}
+
+.thumb{
+    top: 0;
+    width: 90vw;
+    margin: 0 5vw;
+    z-index: -1;
+    border-radius: 2vh;
+    //position: absolute;
+}
+
+button{
+    background-color: $wh;
+    color: $bl;
+    border: $bl solid 5px;
+    border-radius: 2vh;
+    padding: 1vh 1vw;
+    margin: 1vh 1vw;
+    font-family: $font;
+}
+
+.btn-describe{
+    color: $main;
+    border-color: $main;
+    svg{
+        fill: $main
+    }
+}
+
+.btn-others{
+    color: $sec;
+    border-color: $sec;
+    svg{
+        fill: $sec
+    }
+}
+
+.description{
+    padding: 10vh 10vw 0vh;
+}
+
+.container-add-photos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.add-photo-placeholder{
+    border: rgba($bl, 0.6) dashed 10px;
+    border-radius: 5vh;
+    width: 35vw;
+    height: 35vh;
+    color: rgba($bl, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5em;
+    margin-bottom: 5vh;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper-info{
+    padding: 3vh 5vw;
+    margin: 0 10vw 10vh;
+    border: $bl solid 1px;
+    border-radius: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.center-text{
+    text-align: center;
+}

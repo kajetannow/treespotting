@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <header>
+            <h1 class="app-title"><a href="index.html">TreeSpotting</a></h1>
+        </header>
+        <section>
+            <img class="thumb" src="pics/bartek.jpg">
+            <div class="container-tree-content">
+                <h1>Dąb Bartek</h1>
+                <h3>400m od Ciebie</h3>
+            </div>
+            <div class="container-control-btn">
+                <button class="btn-others"><img src="pics/dice.svg"></button>
+                <button class="btn-more" onclick="window.scrollTo(0, document.body.scrollHeight);"><img src="pics/arrow-down.svg"></button>
+                <button class="btn-describe"><a href="edit.html"><img src="pics/pen.svg"></a></button>
+            </div>
+            <div class="container-descriptions">
+                <div class="description">
+                    <h4>Historia od Wildeckiej Walkirii</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima vel facere hic odio nulla fugiat quam error dolorem dignissimos quasi, eius provident qui perferendis necessitatibus aspernatur excepturi sit nesciunt nobis.</p>
+                </div>
+                <div class="description">
+                    <h4>Historia od Łazarskiego Wojownika</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima vel facere hic odio nulla fugiat quam error dolorem dignissimos quasi, eius provident qui perferendis necessitatibus aspernatur excepturi sit nesciunt nobis.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="scripts/lazyloader.js" type="text/javascript"></script>
+</html>
