@@ -37,6 +37,7 @@ h2, h3, h4 {
   border-radius: 2vh;
   align-self: center;
   font-size: 1.7em;
+  text-decoration: none;
 }
 
 .container-select-mode {
@@ -64,10 +65,20 @@ section {
 
 .container-tree-content h1 {
   text-align: center;
+  font-size: 1.8em;
 }
 
 .container-tree-content h2 {
   text-align: left;
+}
+
+.container-tree-content h3 {
+  margin-top: 2.5vh;
+  color: rgba(33, 33, 32, 0.8);
+}
+
+.container-tree-content h4 {
+  text-align: center;
 }
 
 .container-control-btn {
@@ -100,12 +111,12 @@ button {
 }
 
 .btn-describe {
-  color: #ADE03A;
-  border-color: #ADE03A;
+  color: #91bb30;
+  border-color: #91bb30;
 }
 
 .btn-describe svg {
-  fill: #ADE03A;
+  fill: #91bb30;
 }
 
 .btn-others {
@@ -157,4 +168,8 @@ form {
 
 .center-text {
   text-align: center;
+}
+
+.btn-send {
+  width: 80%;
 }

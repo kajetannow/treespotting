@@ -5,26 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'><link rel="stylesheet" href="./style/cards.css">
     <link rel="stylesheet" href="style/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500&display=swap" rel="stylesheet">
-</head>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500&display=swap" rel="stylesheet">  
+    </head>
 <body>
-    <main>
-        <header>
-            <h1 class="app-title"><a href="index.html">TreeSpotting</a></h1>
+    <main> 
+        <section style="height:100vh">
+            <header style="margin:0; padding:20px 0 0 0; height:8vh;">
+            <h1 class="app-title" style="height:10vh; margin:0; padding:0; text-align: center; vertical-align: middle;"><a href="index.html">TreeSpotting</a></h1>
         </header>
-        <section>
-            <img class="thumb" src="pics/bartek.jpg">
-            <div class="container-tree-content">
-                <h1>Dąb Bartek</h1>
-                <h3>400m od Ciebie</h3>
-            </div>
-            <div class="container-control-btn">
-                <button class="btn-others"><img src="pics/dice.svg"></button>
-                <button class="btn-more" onclick="window.scrollTo(0, document.body.scrollHeight);"><img src="pics/arrow-down.svg"></button>
-                <button class="btn-describe"><a href="edit.html"><img src="pics/pen.svg"></a></button>
+            <div class="tinder">
+                  <div class="tinder--cards">
+                    <div class="tinder--card">
+                        <img class="picclass" src="pics/bartek.jpg">
+                        <div class="container-tree-content">
+                            <h1>Dąb Bartek</h1>
+                            <h3>400m od Ciebie</h3>
+                            <h4>pokaż na mapie</h4>
+                        </div>
+                    </div>
+                    <div class="tinder--card">
+                        <img class="picclass" src="pics/bartek.jpg">
+                        <div class="container-tree-content" class="removed">
+                            <h1>Dąb Bartek</h1>
+                            <h3>400m od Ciebie</h3>
+                            <h4>pokaż na mapie</h4>
+                        </div>
+                    </div>
+                    <div class="tinder--card">
+                        <img class="picclass" src="pics/bartek.jpg">
+                        <div class="container-tree-content">
+                            <h1>Dąb Bartek</h1>
+                            <h3>400m od Ciebie</h3>
+                            <h4>pokaż na mapie</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-control-btn" style="height:10vh; z-index: 10;">
+                    <button id="nope" class="btn-others" ><img src="pics/dice.svg"></button>
+                    <button class="btn-more" onclick="window.scrollTo(0, document.body.scrollHeight);"><img src="pics/arrow-down.svg"></button>
+                    <button id="love" class="btn-describe"><a href="edit.html"><img src="pics/pen.svg"></a></button>
+                </div>
             </div>
             <div class="container-descriptions">
                 <div class="description">
@@ -39,5 +65,7 @@
         </section>
     </main>
 </body>
+<script src='https://hammerjs.github.io/dist/hammer.min.js'></script><script  src="./script.js"></script>
 <script src="scripts/lazyloader.js" type="text/javascript"></script>
 </html>
+
